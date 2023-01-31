@@ -1,0 +1,6 @@
+n = int(input('Введите число монет: '))
+coins = input('Введите последовательность монет(0-орёл, 1-решка): ').split()
+len_list = len(coins)
+h = len_list - coins.count('0')
+t = len_list - coins.count('1')
+print(f'{n} -> {" ".join(coins)}', min(h, t), sep='\n')
